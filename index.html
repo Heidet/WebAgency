@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebAgency</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/roboto.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="main-navigation"><!-- bloc menu de navigation -->
+            <div class="conteneur"><!-- block conteneur avec logo plus navigation -->
+                <img src="img/logo.png" id="logo" alt="logowebagence"><!-- logo web agency --> 
+                <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+                <label for="menu-checkbox" class="menu-toggle"> ≡ </label>
+                <ul class="menu"><!-- liste navigation --> 
+                    <li><a href="#slider">Accueil</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#projet">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/slide/bg1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/slide/bg2.jpg" alt="Second slide">
+                </div>
+            </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+              <div class="text-slider"> 
+            <h2><strong>WEBAGENCY</strong>: L'AGENCE DE TOUS <br /> VOS PROJETS !<br /></h2>
+            <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser!</p>
+            <button><strong>Plus d'infos</strong></button>
+            </div>
+        </div>
+    </section>
+
+    <!--<section id="slider"> -- bloc slider -
+        <div class="slides">
+            <img src="img/slide/bg1.jpg" id="bg1" alt="slide1"> 
+        </div>
+        <div class="slides">
+            <img src="img/slide/bg2.jpg" id="bg2" alt="slide2"> 
+        </div>
+        <div class="previous"><i class="fa fa-chevron-left"></i></div> -- chevron font awesome gauche --
+        <div class="next"><i class="fa fa-chevron-right"></i></div>-- chevron font awesome droit --
+        <div class="text-slider"> 
+            <h2><strong>WEBAGENCY</strong>: L'AGENCE DE TOUS <br /> VOS PROJETS !<br /></h2>
+            <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser!</p>
+            <button><strong>Plus d'infos</strong></button>
+        </div>
+    </section> -->
+
+    <section id="services"> <!-- section service --> 
+        <div id="conteneur"> <!-- conteneur entête + image + texte + service --> 
+            <header>
+                <h2 class="titre1"><strong>NOS SERVICES</strong></h2>
+                <hr /><!-- separateur -->
+                <i class="fa fa-circle"></i><!-- point bleu fontawesome -->
+                <p>Chez <strong class="webagency">WebAgency </strong> Nous sommes passionnés par la technologie web et mettons à profit notre expérience.</p>
+            </header>
+            <div class="main-feature">
+                <img src="img/main-feature.png" id="mac" alt="imageservices"> <!-- image Mac fixe --> 
+            </div>
+            <div class="main-feature">
+
+                <div class="service"><!-- 1er bloc service utilisateur designe-->
+                    <div class="icones">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i> 
+                        <i class="fa fa-circle" aria-hidden="true"></i><!-- point fontawesome -->
+                    </div>
+                    <div class="texte">
+                        <h1><strong>UX Design</strong></h1>
+                        <p>Notre équipe de designers sera là pour approfondir vos besoins, définir un design, les mettre en application pour garantir une bonne expérience utilisateur. Un site <strong>responsive, ergonomique, rapide, accessible </strong> sera un plus pour votre projet.
+                        <br /> Vos besoins sont notre priorité. </p>
+                    </div>
+                </div>
+
+                <div class="service"><!-- 2eme bloc service designe-->
+                    <div class="icones">
+                        <i class="fa fa-cubes" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i><!-- point fontawesome -->
+                    </div>
+                    <div class="texte">
+                        <h1><strong>UI Design</strong></h1>
+                        <p>Déjà une petite idée sur l'apparence de votre site? Notre développement est <strong>100% sur mesure.</strong> Notre équipe de <em>WebDesigners</em> et <em>Développeurs</em> mettons en place un site <strong>sur-mesure, intuitif, avec un visuel de qualité. </strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="service">
+                    <div class="icones"><!-- 3eme bloc service seo référencement web-->
+                        <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i><!-- point fontawesome -->
+                    </div>
+                    <div class="texte">
+                        <h1><strong>SEO</strong></h1>
+                        <p>L’optimisation pour les moteurs de recherche, référencement naturel ou SEO (pour search engine optimization), est un ensemble de techniques visant à optimiser la visibilité d'une page web dans les résultats de recherche,<strong class="seo"> Chez nous !</strong> On en fait une priorité !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projet">
+        <div class="nos-projet">
+            <header>
+                <h2 class="titre2"><strong>NOS PROJETS</strong></h2>
+                <hr /><!-- separateur -->
+                <i class="fa fa-circle"></i><!-- point fontawesome --> 
+                <br />
+                <span>Conscient que les mots à eux seuls ne peuvent vous satisfaire, voici une présentation de nos divers projets.</span>
+            </header>
+            <nav class="menu_projet">
+                <ul class="buttons">
+                    <li>All Works<i class="fa fa-caret-down"></i></li>
+                    <li>Creative<i class="fa fa-caret-down"></i></li>
+                    <li>Corporate<i class="fa fa-caret-down"></i></li>
+                    <li>Portfolio<i class="fa fa-caret-down"></i></li>
+                </ul>
+            </nav>
+            <footer>
+                <div class="portfolio">
+                    <div class="block">
+                        <figure class="image_projet">
+                            <img src="img/portfolio/01.jpg" alt="img1">
+                            <figcaption class="banniere">
+                                <span class="title">Opti'Mini</span>
+                                <p>Voici le site Web d'un Opticien</p>
+                                <i class="fa fa-eye"></i>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="block">
+                        <figure class="image_projet">
+                            <img src="img/portfolio/02.jpg" alt="img2">
+                            <figcaption class="banniere">
+                                <span class="title">Les lapins roses</span>
+                                <p>Association pour enfants en hopitaux</p>
+                                <i class="fa fa-eye"></i>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="block">
+                        <figure class="image_projet">
+                            <img src="img/portfolio/03.jpg" alt="img3">
+                            <figcaption class="banniere">
+                                <span class="title">Jean's styles</span>
+                                <p>Site de ventes en ligne de jean</p>
+                                <i class="fa fa-eye"></i>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="block">
+                        <figure class="image_projet">
+                            <img src="img/portfolio/04.jpg" alt="img4">
+                            <figcaption class="banniere">
+                                <span class="title">Blog d'un architecte</span>
+                                <p>Les plus belles réalisations d'architecte</p>
+                                <i class="fa fa-eye"></i>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="block">
+                        <figure class="image_projet">
+                            <img src="img/portfolio/05.jpg" alt="img5">
+                            <figcaption class="banniere">
+                                <span class="title">Site E-commerce</span>
+                                <p>Site market de vente en ligne</p>
+                                <i class="fa fa-eye"></i>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="block">
+                        <figure class="image_projet">
+                            <img src="img/portfolio/06.jpg" alt="img6">
+                            <figcaption class="banniere">
+                                <span class="title">Agence de voyages</span>
+                                <p>Site de voyages à prix discount</p>
+                                <i class="fa fa-eye"></i>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="block">
+                        <figure class="image_projet">
+                            <img src="img/portfolio/07.jpg" alt="img7">
+                            <figcaption class="banniere">
+                                <span class="title">Forum spatial</span>
+                                <p>Forum des technologies spatiales</p>
+                                <i class="fa fa-eye"></i>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="block">
+                        <figure class="image_projet">
+                            <img src="img/portfolio/08.jpg" alt="img8">
+                            <figcaption class="banniere">
+                                <span class="title">Site fourniture bureau</span>
+                                <p>Site d'achats de fourniture de bureau</p>
+                                <i class="fa fa-eye"></i>
+                            </figcaption>
+                        </figure>
+                    </div>    
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class=titre-form>Contact</h1>
+            <div class="info">
+                <div class="formulaire">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21509.785407352112!2d6.84603245!3d47.6315121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1564907410064!5m2!1sfr!2sfr" width="600" height="450" allowfullscreen></iframe>
+                        <div class="filtrecarte"></div>
+                    <div class="contact">
+                        <form method="post" action="traitement.php">
+                            <aside><h2>Contact info</h2>
+                                    <div class="adresse">
+                                        <strong>WebAgency SAS </strong>
+                                        <address>7 Cite de paradis - 75010 Paris</address>
+                                        <p class="telephone"><span>Tel :</span> 01 02 03 04 05</p>
+                                    </div>
+                            </aside>
+                            <input class="champs" type="text" name="Name" id="Name" placeholder="Name" />
+                   
+                            <br />
+                            <input class="champs" type="text" name="Email" id="Email" placeholder="Email" />
+
+                            <br />
+                            <input class="champs" type="text" name="Subject" id="Subject" placeholder="Subject" />
+                        
+                            <br />
+                            <textarea class="message" name="message" id="message" placeholder="Message"></textarea>
+
+                            <br />
+                            <button><strong>Send Message</strong></button>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="validation">
+            <span class="signature">2019 - WebAgency. Réalisé par Antoine Heidet.</span>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="CSS Valide !" />
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

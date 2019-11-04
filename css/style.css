@@ -1,0 +1,697 @@
+/*couleurs bleu de référence héxadécimal= ((((#5cadd3)))) */ 
+/*couleurs de référence gris (((((#e5e5e5))))) */ 
+body {
+    margin: 0; /* marge 0 */
+    padding: 0; 
+    font-family: 'roboto' !important , sans-serif !important;
+}
+img {
+    overflow: hidden;
+}
+.main-navigation ul {
+    float: right;
+    margin: 0;
+}
+.main-navigation ul li {
+    display: inline-block;  /*liste a puce en bloc */ 
+}
+.main-navigation{
+    position: fixed; /* visuel fixer du bloc */ 
+    z-index: 1; /* visuel prioritaire */ 
+    background: white;
+    width: 100%; /*largeur du bloc */
+}
+.conteneur{
+    max-width: 1400px; /*largeur maximum du conteneur */
+    min-height: 90px; 
+    margin: 0 auto; /* marge 0 dans le conteneur , centrage auto */ 
+}
+.menu-checkbox,
+.menu-toggle {
+        display: none;
+}
+#logo{
+    padding: 17px; /*marge exterieur du bloc logo */ 
+}
+.main-navigation ul li a {
+    color: #777777;
+    border-top: solid 3px transparent; /* bordure plus tailles plus effets visuel */ 
+    display: block; /* block des liens */ 
+    line-height: 84px; /* position hauteur des lignes*/ 
+    padding: 0 20px; /* marge intérieur haut + droit */
+    text-decoration: none; /* pas de text décoration sur liens navigations */  
+    font-size: 15px; /* taille text */ 
+}
+.main-navigation ul li a:hover{
+    border-top: solid 3px #5cadd3; /* bordure solide de 3px avec une couleur héxadécimal bleu */
+}
+
+#slider {
+    position: relative;
+    overflow: hidden; /* ne pas depasser de la page */ 
+    width: 100%; /* prendre 100% de la largeur de la page */ 
+    padding: 90px 0 0 0; /* padding haut 100px pour être en bas de la barre */ 
+}
+.carousel-item img{
+    width: 100%;
+}
+#bg1{
+    display: block; /*image principal du slider */
+}
+#bg2{
+    display: none; /* image secondaire du slider */ 
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 3% !important;
+}
+.text-slider{
+    position: absolute; 
+    top: 30%; /* position text slide 40 % du haut */ 
+    left: 10%; /* position 10% de la gauche */
+    color: white; /* couleurs blanche */ 
+    font-size: 20px; /* taille text */ 
+    width: 40%; /* taille du block */ 
+}
+.text-slider button {
+    background-color: #5cadd3; /* couleurs bleu de fond pour le bouton */ 
+    border: none;
+    border-bottom: 5px solid #4494BB; /* couleurs un peut plus foncer pour le designe bas avec 3px */
+    padding: 10px 15px;
+    color: white; 
+    /*font-weight: bold; /* text en gras corriger avec bonne balise HTML */ 
+    font-size: 20px; /* taille text bouton */ 
+    border-radius: 4px /* arrondissement des bords du bouton */ 
+}
+.text-slider button:hover {
+    background-color: #4394BA; 
+    border-bottom: 3px solid #2B7BA2;
+    color: white; 
+    cursor: pointer;  /*curseur poiteur */ 
+}
+.text-slider h2 strong{
+    color: #5cadd3 /* couleurs bleu */ 
+}
+.previous:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* transparence plus foncée lors du survole des boutons avec la souris */ 
+    cursor: pointer; /* poiteur avec souris lors du survole */ 
+}
+.previous, .next{
+    position: absolute; 
+    top: calc(50% - 0px); /* calc 50ù du slider */ 
+    background-color: rgba(0, 0, 0, 0.3); /* coleurs RGBa avec transparence 0.3/1 */ 
+}
+.previous{
+    left: -10px; /* gauche -10 px car si non trop moche */ 
+    border-top-right-radius: 50%; /* arrondies sur le bord haut gauche du bouton */ 
+    border-bottom-right-radius: 50%; /* arrondies sur le bord bas gauche du bouton */
+}
+.next{
+    right: -10px; 
+    border-top-left-radius: 50%;  /*bordure haut gauche de 50 % pour demi arrondie */ 
+    border-bottom-left-radius: 50%; /* bordure bas gauche 50% pour autre demi arrondie */ 
+}
+.previous i,
+.next i {
+    font-size: 10px; /* taille du caractère */ 
+    color: white; /* couleurs blanc des fleches */ 
+    padding: 12px; /* marge interieur des fleches */ 
+}
+
+/* Section nos Service 
+-----------------------------------------*/
+.titre1, 
+.titre2{
+    font-size: 30px;
+}
+#conteneur header h1{
+    text-align: center; 
+    font-size: 30px; 
+}
+#services #conteneur header{
+    text-align: center;
+}
+#services #conteneur header p{
+    max-width: 1000px; /* largeur max du bloc */ 
+    font-size: 20px; 
+    margin: auto; /* margin auto pour centrer le bloc paragraphe */ 
+    margin-bottom: 30px; /* marge bas pour écart */ 
+}
+.webagency, .seo{
+    color: #5cadd3; /* couleurs text */ 
+}
+.main-feature{
+    width: 49%; /* marge 49 % si non bloc paragraphe ce mettra en bas */ 
+    display: inline-block; /* bloc image plus bloc en ligne ---- */ 
+}
+#mac{
+    margin-bottom: 30px; 
+}
+#conteneur{
+    max-width: 1400px; /* maximum largeur du block */ 
+    margin: auto; /* marge auto pour centrage */ 
+    margin-top: 50px; /* margin haut du block complet mes services. */ 
+}
+hr {
+    height: 1px; /* épaisseur barre 1 px */ 
+    border: none; /* pas de bordure */ 
+    background-color: grey; /* couleurs gris séparateur */ 
+    width: 150px; /* définition largeur 150 px */ 
+}
+.fa-circle{
+    border-radius: 50%;
+    border: 3px solid white; 
+    color: #5cadd3; 
+    top: -29px; /* replacement de l'icône */ 
+    position: relative;
+}
+.nos-projet .fa-circle{
+    border-color: #f5f5f5;
+}
+.icones{
+    color: #5cadd3; /* couleurs bleu pour icones. */ 
+    height: 70px;
+    width: 70px;
+    min-width: 70px;
+    border: 1px solid #d9d9d9; /* epaisseur fonction et couleurs du cercle */ 
+    border-radius: 100%;  /* pour le cercle gris */ 
+    display: flex; /* flexbox */ 
+    justify-content: center;
+    align-items: center; /* alignement 3 items */ 
+    position: relative;
+}
+.service{
+    display: flex; /* flexbox */ 
+    align-items: center; /* align item avec bloc */ 
+}
+.texte{
+    text-align: left; 
+    margin-left: 30px;  
+}
+.texte h1{
+    font-size: 20px !important; 
+}
+.icones .fa-circle{
+    position: absolute;
+    right: -10px;
+    top: 22px;
+    background-color: white;
+    width: 20px;
+}
+.icones .fa-line-chart,.icones .fa-cubes,.icones .fa-pie-chart{
+    font-size: 25px; /* taille icones */ 
+} 
+
+/* Section Nos Réalisation 
+-----------------------------------------*/
+
+.nos-projet{
+    background-color: #f5f5f5;
+}
+.nos-projet header{
+    text-align: center;
+    padding-top: 30px; /* marge interieur haut pour descente du titre */
+}
+.nos-projet span{
+    font-size: 20px;
+}
+.nos-projet h1{
+    text-align: center;
+}
+.menu_projet{
+    margin: 30px; /* placement bouton pour espace */ 
+    text-align: center;
+}
+.menu_projet ul.buttons li {
+    display: inline-block; /* liste à puce en ligne sans puce */
+    background-color: #e5e5e5; 
+    border-bottom: 3px solid #e5e5e5; /* bordure bas */ 
+    color: black;
+    padding: 8px 15px;
+    margin-left: -4px;
+    padding-top: 0;
+}
+.buttons li i{
+    font-size: 30px;
+}
+.fa-caret-down {
+    color: transparent;
+    position: relative;
+    bottom: -29px;
+    left: calc(-50% - 6px);
+    width: 0;
+}
+.image_projet{
+    margin: 13px;
+    overflow: hidden; /* ne pas créer de deplacement sur la gauche */ 
+    position: relative;
+}
+.portfolio{
+    display: flex; /* bloc aligner selon la page en ligne suivis */ 
+    flex-wrap: wrap; /* retour à la ligne des bloc à la fin de la page */ 
+    justify-content: space-between; /* espace entre les bloc */
+}
+.nos-projet {
+    margin: 50px 0; /* margin 50 px pour espace entre bloc et 0 pour ne pas avoir de margin sur les côtés */ 
+}
+.nos-projet footer{
+    width: 80%; /* largeur du bloc de pied de page */ 
+    margin: auto; /* marge auto pour centrage */ 
+}
+.portfolio img{
+    width: 100%; /* largeur des images */ 
+    /*margin: 10px; /* marge entre */ 
+}
+.banniere .title {
+    font-size: 20px;
+    color: white;
+    padding-left: 5px;
+}
+.banniere p {
+    font-size: 15px;
+    color: white;
+    padding-left: 5px;
+    margin-top: 5px; /* placement paragraphe dans bloc bannière */ 
+}
+.banniere .fa-eye {
+    background-color: #5cadd3;
+}
+.banniere i{
+    position: absolute;
+    background-color: blue;
+    border-radius: 50%; /* arrondie */ 
+    right: 20px; /* placement depuis droite bloc */
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    top: -20px; /* placement oeil depuis le haute */ 
+    color: white; 
+}
+.banniere{
+    position: absolute;
+    height: 35%;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.image_projet:hover .banniere {
+    display: block;
+}
+.block {
+    width: 25%;
+}
+
+/* Section Contact plus Maps
+-----------------------------------------*/
+.titre-form {
+    display: none;
+}
+.info {
+    margin-top: 20px;
+    z-index: 0;
+    position: relative;
+}
+.info iframe{
+    width: 100%;
+    height: 730px;
+    position: absolute;
+}
+.filtrecarte{
+    position: relative;
+    width: 100%;
+    height: 735px;
+    background-color: #3491B2;
+    opacity: 0.3;
+    z-index: 2;
+}
+.contact {
+    z-index: 2;
+    position: absolute; /* bloc positionner sur bloc info */
+    top: 5%; /* haut */ 
+    left: 70%; /* gauche */
+    padding: 6px 65px 30px 0px; /* marge intérieur contact haut droite bas gauche */ 
+    background-color: rgba(255, 255, 255, 0.7);  /*transparence avec couleurs bleu léger */ 
+    padding-bottom: 10px;
+}
+.contact aside {
+    color: #848484;
+    margin-bottom: 15px;
+}
+.contact form {
+    margin: 0px 50px 5px 16px;
+}
+.contact form button{
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #5cadd3;
+    border-bottom: 3px solid #4494BB; /* bordure en bas du bouton */ 
+    font-size: 15px;
+}
+.contact form button strong{
+    color: white;
+}
+.contact form button:hover {
+    background-color: #4394BA; 
+    border-bottom: 3px solid #2B7BA2;
+    color: white; 
+    cursor: pointer;  /*curseur poiteur */ 
+}
+.contact input,
+.contact textarea {
+    padding-left: 10px; /* marge intérieur pour centrage text */ 
+    font-size: 13px;
+}
+.champs {
+    width: 133%; /* largeur des champs a renseigner */
+    height: 25px;/* margin pour écart entre les champs */ 
+    margin: 4px; 
+}
+.message {  
+    height: 170px; /* hauteur contact */    
+    width: 132%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.info input,
+.info textarea{
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.contact address{
+    margin-bottom: 0 !important;
+}
+.adresse {
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+.contact h2 {
+    margin-left: 10px;
+    color: black;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.contact address,
+.adresse {
+    margin-top: 3px;
+}
+.telephone {
+    margin: 0;
+}
+.signature {
+    display: inline-block;
+    margin-left: 35%;
+}
+.validation img {
+    float: left;
+}
+
+/* Média Query Version Mobile plus tablette 
+-----------------------------------------*/
+
+@media screen and (min-width: 1200px) /* Média query minimum pour enlevement icône dynamique main-navigation réalisation */
+{
+    .menu-checkbox,
+    .menu-toggle {
+        display: none;
+    }
+    .previous i,
+    .next i{
+        font-size: 15px;
+        color: white;
+        padding: 13px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px
+    }
+    .menu_projet ul.buttons li:hover {
+        background-color: #5cadd3; /* transparence plus foncée lors du survole des boutons avec la souris */ 
+        border-bottom: 3px solid #4494BB; /* bordure bleu plus foncer */ 
+        cursor: pointer; /* poiteur avec souris lors du survole */
+        color: white;
+    }
+    .menu_projet ul.buttons li:hover .fa-caret-down {
+        color: #4494BB;
+    }
+    .menu_projet ul.buttons li:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .menu_projet ul.buttons li:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) /* média query mode tablette */ 
+{
+    .menu-checkbox,
+    .menu-toggle {
+        display: none;
+    }
+    .main-navigation{ 
+        position: fixed;
+    }
+    #main-navigation ul li {
+        width: 100%;
+        text-align: center;
+    }
+    #main-navigation ul li a {
+        line-height: 50px; /* haute minimal ligne */ 
+        border-left: 3px solid transparent;
+    }
+    #main-navigation ul {
+        float: initial;  /* position inital page */ 
+        padding-left: 0; /* annulation padding */ 
+        background-color: rgba(92, 173, 211, 0.25); 
+    }
+    #main-navigation ul li a,
+    #main-navigation ul li a:hover {
+        border-top: 0; /* pas de bordure enlevement bordure */ 
+    }
+    #slider {
+        padding: 90px 0 0 0; 
+    }
+    .text-slider{
+        font-size: 15px;
+    }
+    .previous, .next {
+        top: calc(50% - 15px);  /* centrage bouton */ 
+    }
+    .block { 
+        width: 50%; /* block 50% pour bloc par 2 */
+    }
+    .contact {
+        left: 10%; 
+    }
+    .banniere {
+        display: block;
+    }
+
+}
+@media screen and (max-width: 600px)
+{
+    .menu {
+        display: none;
+    }
+    .menu-checkbox {
+        display: none;
+    }
+    .menu-checkbox:checked ~ .menu {
+        display: block;
+    }
+    .main-navigation {
+        position: initial; /* position initial du main-navigation pour alignement avec slider */ 
+    }
+    .main-navigation .menu-toggle {
+        display: inline-block;
+    }
+    .menu-toggle {
+        font-size: 70px;
+        float: right;
+        padding-right: 30px;
+        color: #5cadd3;
+    }
+    .main-navigation ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .main-navigation ul li a {
+        line-height: 50px; /* haute minimal ligne */ 
+        border-left: 3px solid transparent;
+    }
+    .main-navigation ul {
+        float: initial;  /* position inital page */ 
+        padding-left: 0; /* annulation padding */ 
+        background-color: rgba(92, 173, 211 , 0.25);
+    }
+    .main-navigation ul li a,
+    .main-navigation ul li a:hover {
+        border-top: 0; /* pas de bordure enlevement bordure */ 
+    }
+    #slider {
+        padding: 0; 
+    }
+    .previous, .next {
+        top: calc(50% - 15px);  /* centrage bouton */ 
+    }
+    .text-slider {
+        top: 0;
+        width: 60%;
+        font-size: 12px;
+    }
+    .text-slider button {
+        font-size: 10px;
+        padding: 7px 12px;
+        border-bottom: 2px solid #4494BB; 
+    }
+    #mac {
+        position: initial;
+        overflow: hidden; /* pas de colonne sur portable */ 
+        display: none;
+    }
+    .block {
+        width: 100%;
+    }
+    .menu_projet {
+        margin-left: 0; /* position centrer main-navigation */ 
+    }
+    .image_projet {
+        width: 100%;
+        margin: 0; /* enlevement margin sur entre les images */ 
+       /* left: 25%; /* position depuis gauche */ 
+    }
+    .contact {
+        left: 75px;
+        position: initial;
+        background-color: rgba(239, 245, 247, .9);
+    }
+    .contact aside {
+        text-align: center;
+    }
+    .main-feature {
+        width: 100%;
+        text-align: center;
+    }
+    .service {
+        display: block;
+    }
+    .texte {
+        text-align: center;
+    }
+    .icones {
+        margin: auto;
+    }
+    .banniere {
+        display: block;
+    }
+    .info input,
+    .message {
+        width: 120%;
+    }
+}
+@media screen and (max-width: 380px)
+{
+    .menu {
+        display: none;
+    }
+    .menu-checkbox {
+        display: none;
+    }
+    .menu-checkbox:checked ~ .menu {
+        display: block;
+    }
+    .main-navigation {
+        position: initial; /* position initial du main-navigation pour alignement avec slider */ 
+    }
+    .main-navigation img {
+        width: 60%;
+    }
+    .main-navigation .menu-toggle {
+        display: inline-block;
+    }
+    .menu-toggle {
+        font-size: 75px;
+        float: right;
+        padding-right: 50px;
+        color: #5cadd3;
+    }
+    .main-navigation ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .main-navigation ul li a {
+        line-height: 50px; /* haute minimal ligne */ 
+        border-left: 3px solid transparent;
+    }
+    .main-navigation ul {
+        float: initial;  /* position inital page */ 
+        padding-left: 0; /* annulation padding */ 
+        background-color: rgba(92, 173 , 211, 0.25);
+    }
+    .main-navigation ul li a,
+    .main-navigation ul li a:hover {
+        border-top: 0; /* pas de bordure enlevement bordure */ 
+    }
+    #slider {
+        padding: 0; 
+    }
+    .previous, .next {
+        top: calc(50% - 15px);  /* centrage bouton */ 
+    }
+    .text-slider {
+        top: 0;
+        width: 60%;
+        font-size: 12px;
+    }
+    .text-slider button {
+        font-size: 10px;
+        padding: 7px 12px;
+        border-bottom: 2px solid #4494BB; 
+    }
+    #mac {
+        position: initial;
+        overflow: hidden; /* pas de colonne sur portable */ 
+        display: none;
+    }
+    .block {
+        width: 100%;
+    }
+    .menu_projet {
+        margin-left: 0; /* position centrer main-navigation */ 
+    }
+    .image_projet {
+        width: 100%;
+        margin: 0; /* enlevement margin sur entre les images */ 
+       /* left: 25%; /* position depuis gauche */ 
+    }
+    .contact {
+        left: 75px;
+        position: initial;
+        background-color: rgba(239, 245, 247, .9);
+    }
+    .contact aside {
+        text-align: center;
+    }
+    .main-feature {
+        width: 100%;
+        text-align: center;
+    }
+    .service {
+        display: block;
+    }
+    .texte {
+        text-align: center;
+    }
+    .icones {
+        margin: auto;
+    }
+    .banniere {
+        display: block;
+    }
+    .info input,
+    .message {
+        width: 120%;
+    }
+}
